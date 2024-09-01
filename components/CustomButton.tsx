@@ -5,7 +5,7 @@ import { ButtonProps } from "@/types";
 const getBgVariantStyle = (variant: ButtonProps["bgVariant"]) => {
   switch (variant) {
     case "primary":
-      return "bg-neutral-500";
+      return "bg-violet-800";
     case "secondary":
       return "bg-neutral-500";
     case "danger":
@@ -15,7 +15,7 @@ const getBgVariantStyle = (variant: ButtonProps["bgVariant"]) => {
     case "outline":
       return "bg-transparent border-[0.5px] border-neutral-500";
     default:
-      return "bg-indigo-500";
+      return "bg-violet-800";
   }
 };
 const getTextVariantStyle = (variant: ButtonProps["textVariant"]) => {
@@ -46,7 +46,7 @@ const CustomButton = ({
   return (
     <TouchableOpacity
       onPress={onPress}
-      className={`w-full rounded-full flex flex-row p-3 justify-center items-center shadow-md shadow-neutral-500/70 ${getBgVariantStyle(bgVariant)} ${className}`}
+      className={`w-full rounded-full flex flex-row p-3 justify-center items-center shadow shadow-neutral-100/70 ${getBgVariantStyle(bgVariant)} ${className}`}
       {...props}
     >
       {IconLeft && <IconLeft />}
