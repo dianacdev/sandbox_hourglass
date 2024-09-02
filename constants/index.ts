@@ -1,5 +1,6 @@
 import DianaCLogo from '../assets/images/DianaCLogo.png';
 import icon from '../assets/images/icon.png';
+import check from '../assets/images/check.png';
 import arrowDown from "@/assets/icons/arrow-down.png";
 import arrowUp from "@/assets/icons/arrow-up.png";
 import backArrow from "@/assets/icons/back-arrow.png";
@@ -29,6 +30,7 @@ import to from "@/assets/icons/to.png";
 export const images = {
     DianaCLogo,
     icon,
+    check
 }
 
 export const icons = {
